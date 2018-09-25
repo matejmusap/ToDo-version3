@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const todoRoutes = require("./routes/todos");
 
 app.use(morgan("tiny"));
-app.use(body-parser.json());
+app.use(bodyParser.json());
 app.use(cors());
 app.use("/api/todos", todoRoutes);
 
